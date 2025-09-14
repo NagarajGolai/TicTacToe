@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  transition: all 0.3s ease;
+}
+
+body {
+  overflow: hidden;
+  background-color: #d7d6d6;
+}
+
+h1 {
+  color: black;
+  font-size: 50px;
+  margin-bottom: -8px;
+}
+.mainDiv {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+@media (max-width: 600px) {
+    .mainDiv {
+        transform: translate(0%, -5%);
+    }
+}
+.outDiv {
+  color: black;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.box {
+  background: #e24833;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+}
+
+.box:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.box:active {
+  transform: scale(0.93);
+  box-shadow: 0 0 20px purple;
+}
+.btn {
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #363636;
+  color: white;
+}
+
+.winBlocks {
+  background-color: green;
+}
+
+#winCount {
+  font-size: 30px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#shareBtn {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: #000;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#shareBtn:hover {
+  background: goldenrod;
+  color: black;
+  font-size: 25px;
+}
+
+#shareSpan {
+  display: hidden;
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  opacity: 0;
+  font-size: 15px;
+}
+
+#shareBtn:hover #shareSpan {
+  display: block;
+  position: absolute;
+  bottom: 50px;
+  width: 100px;
+  right: 0;
+  background: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  opacity: 1;
+}
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  #shareBtn {
+    display: none;
+  }
+}
