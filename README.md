@@ -7,7 +7,7 @@ Play against friends and enjoy the classic **X vs O** battle on a clean, interac
 
 ## 🚀 Quick Links  
 
-<p align="center">
+<p align="left">
   <a href="https://tictactoe-online-arena.netlify.app/">
     <img src="https://img.shields.io/badge/Live%20Project-FFD700?style=for-the-badge&logo=vercel&logoColor=black" alt="Live Project"/>
   </a>
@@ -19,20 +19,4 @@ Play against friends and enjoy the classic **X vs O** battle on a clean, interac
   </a>
 </p>
 
----
-
-## ✨ Features
-- 🎲 Classic 3x3 Tic Tac Toe grid  
-- 🖥️ Responsive design for all devices  
-- ⚡ Built with React + modern styling  
-
----
-
-## 🛠️ Tech Stack
-- **JavaScript (ES6+)**
-- **HTML5 / CSS3**
-
----
-
-## 📬 Contact
-For collaboration or feedback, feel free to connect on [LinkedIn](https://www.linkedin.com/in/your-linkedin).  
+---  
